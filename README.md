@@ -2,6 +2,11 @@
 A small 32-bit micro controller created entirely in Verilog with gate level programming.
 A detailed explanation of Register file and ALU is given in the attached PDF while the overall structure is present in the `main32` module in `main32.v`
 
+- The architecture does not include a `HALT` mechanism thus the processor continues to keep executing and upon overflow it will roll back to address `0`, in order to make it stop some sort of infinite loop can be created or custom circuit can be added
+- `opCode = 011` has 7 empty slots which can be used to implement additional functionality
+
+> NOTE : This was a learning project and thus is bound to contain mistakes
+
 # Structure
 
 
