@@ -1,5 +1,6 @@
 # microC_32
-A small 32-bit micro controller created entirely in Verilog with gate level programming. 
+A small 32-bit micro controller created entirely in Verilog with gate level programming.
+A detailed explanation of Register file and ALU is given in the attached PDF while the overall structure is present in the `main32` module in `main32.v`
 
 # Structure
 
