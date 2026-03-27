@@ -117,6 +117,20 @@ module xor32(
 
 endmodule
 
+module xor32A(
+    input [31:0] A,
+    input B,
+    output [31:0] Y
+    );
+
+    generate
+        for (genvar i = 0; i < 32; i = i + 1) begin
+            xor N (Y[i], A[i], B);
+        end
+    endgenerate
+
+endmodule
+
 module not32(
     input [31:0] X,
     output [31:0] Y
